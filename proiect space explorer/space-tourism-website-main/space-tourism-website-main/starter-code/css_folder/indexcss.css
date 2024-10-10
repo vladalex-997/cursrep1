@@ -1,0 +1,73 @@
+@import url("./navcss.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: white;
+  min-height: 100vh;
+  background: url("../assets/home/background-home-desktop.jpg") no-repeat
+    center/cover;
+}
+
+.container {
+  margin-top: 5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hero-content {
+  margin: 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  gap: 20vw;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.hero-text h1 {
+  font-size: clamp(60px, 8vw, 200px);
+  letter-spacing: 10px;
+}
+
+.hero-text h2 {
+  font-size: clamp(15px, 3vw, 25px);
+  letter-spacing: 10px;
+  font-weight: normal;
+}
+
+.hero-text p {
+  font-size: clamp(12px, 2vw, 16px);
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+.explore-button {
+  width: 22vw;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  color: black;
+  font-size: 2.5vw;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.4s, box-shadow 0.8s;
+}
+
+.explore-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 30px white, 0 0 60px white, 0 0 90px white;
+}

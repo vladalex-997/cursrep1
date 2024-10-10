@@ -1,0 +1,65 @@
+/* p {
+    font-size: 18px;
+}
+
+.specialParagraph {
+    color: green;
+    font-size: 24px;
+}
+
+.container p {
+    color:pink;
+    font: 26px;
+}
+
+.container > p {
+    color:red;
+}
+
+
+div.container p{
+    color:aqua;
+} */
+
+/* toate div care contin container si au paragrafe  */
+
+/* .container.specialParagraph{
+    color: black;
+} */
+
+/* tema de ce nu merge cu black */
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.flexMain{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+/* flexul ca sa aiba efect pe box trebuie sa il aplicam pe parinte */
+/* flexul are efect pe copii directi */
+/* justify content space between - pune 2 elemente in capat si restu creeaza spatii egale intre ele */
+/* justify content space evenly -> face spatiu egal intre ele. */
+/* flex start si flex end -> la start si end paginii */
+
+.box{
+    width: 60px;
+    height: 60px;
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* https://flexboxfroggy.com/ */
+
+/* https://flukeout.github.io/ */
+
+/* https://codingfantasy.com/games/flexboxadventure/play */

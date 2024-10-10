@@ -1,0 +1,13 @@
+@media only screen and (min-width: 500px) {
+  p {
+    color: yellow;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  p {
+    color: red;
+  }
+}
+
+/* daca ambele sunt la fel cu min -> trebuie sa incepem ca sa se aplice corect de la cel mai mic la cel mai mare, se citesc de sus in jos in css */

@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+.wrapper .dashed {
+  border: dashed;
+  height: 150px;
+  width: 150px;
+  position: relative;
+  z-index: 1;
+}
+.wrapper .purple {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  background-color: purple;
+  margin-top: 2rem;
+  top: 10px;
+  z-index: 3;
+}
+.wrapper .yellow {
+  height: 150px;
+  width: 150px;
+  background-color: yellow;
+  border: 1px solid black;
+  opacity: 0.8;
+  z-index: 2;
+  position: absolute;
+  top: 15px;
+}
+
+/* display flex tot are efect pe position absolute si le muta pe toate */
+/* by default elementele au position static */
+/* position relative tine cont si de elementele de deasupra, position absolute il pune peste cele de deasupra */
+/* z-index iti arata cat de aproape de utilizator este elementul */
+/* z-index by default este 0 *//*# sourceMappingURL=styles.css.map */

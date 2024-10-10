@@ -1,0 +1,61 @@
+/* @import url("test.css"); */
+
+/* cu @import poti importa alte fisiere css ca sa fie folosite in fisierul css curent (il folosim ca sa separam fisierele de css pe bucati: head, body...) */
+
+
+/* *{
+    color: burlywood;
+} */
+
+/* *{} este selector universal care se pun pe toate elementele din toata pagina */
+
+/* p { */
+    /* culori cu hex */
+    /* color: #f00;  */
+
+    /* culori cu rgb combinatii */
+    /* color: rgb(250, 100, 0); */
+
+    /* culori cu procente */
+    /* color: rgb(50%, 60%, 20%); */
+    /* color: blue; */
+
+    /* background-color: black; */
+
+    /* atributele se aplica de sus in jos daca le scriem de mai multe ori, mereu se aplica ultima de jos, inclusiv daca pui din nou acelasi p {... } */
+  /* } */
+
+
+  /* body{
+    background-color: aqua;
+  } */
+
+  body{
+    background-image: url(../html/cat.jpg);
+    /* daca imaginea e mai mica decat pagina ea se repeta pe toata pagina ca default */
+    /* background-repeat: repeat-x; */
+    /* repetare doar pe axa x, daca e repeat y o repeta pe axa y */
+
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    /* background size se poate seta si in procente, sau in pixeli */
+
+
+  }
+
+
+  /* in style se scrie denumirea tagurilor pe care se aplica cu virgula intre ele h1,p,div.. urmat de {in interior scriem stylingul} */
+
+
+/* ca sa putem selecta un singur anume element trebuie sa punem atributul class in html si sa ii punem o denumire si dupa punem in css .nume{} */
+
+.italic_paraf{
+    font-style: italic;
+}
+
+/* pentru selector cu id se foloseste #nume{} dar nu ar trebui folosit  */
+
+.cacat{
+    color:pink;
+}

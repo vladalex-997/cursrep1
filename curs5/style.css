@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.main-content {
+  width: 200px;
+  height: 200px;
+  background-color: aqua;
+  animation-name: bara;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bara {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(400px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}/*# sourceMappingURL=style.css.map */

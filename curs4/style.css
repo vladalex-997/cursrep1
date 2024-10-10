@@ -1,0 +1,26 @@
+.nav {
+  background-color: aquamarine;
+  width: 50%;
+  float: left;
+  height: 100px;
+}
+
+.line {
+  background-color: yellow;
+  width: 50%;
+  float: left;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  overflow: visible;
+  justify-content: center;
+}
+
+hr {
+  width: 70%;
+  margin-left: 40%;
+  z-index: 1;
+}
+
+/* asa se face linia peste elementu transparent */
+/* putem folosi un div in loc de hr */

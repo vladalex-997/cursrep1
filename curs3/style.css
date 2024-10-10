@@ -1,0 +1,176 @@
+/* import fonturi */
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap");
+
+p {
+  font-family: "Fredoka", "sans-serif";
+}
+
+/* a:link-> cand link-ul nu a fost vizitat */
+/* a:link { */
+/* color: red;
+    background-color: blue; */
+/* color: aqua;
+} */
+
+/* a:visited -> cand linkul a fost vizitat */
+
+/* a:hover-> cand tinem mouse peste */
+/* a:hover {
+  font-family: "Fredoka";
+} */
+
+/* a:active->cand userul a selectat link-ul si nu a lasat mouse  */
+/* a:active{
+    color: brown;
+} */
+
+/* a:link {
+  color: green;
+}
+
+a:visited {
+  color: red;
+}
+
+a {
+  text-decoration: none;
+} */
+
+/* table,
+th,
+td {
+  border: 1px solid black;
+} */
+
+/* table {
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border-bottom: 2px solid grey;
+}
+
+tr:hover {
+  background-color: aliceblue;
+}
+
+tr:nth-child(even) {
+  background-color: red;
+}
+
+th {
+  background-color: bisque;
+} */
+
+/* table {
+  border: 1px solid black;
+}
+
+tr:nth-child(odd) {
+  background-color: blue;
+}
+
+thead > tr {
+  background-color: aliceblue;
+}
+
+.first {
+  list-style-type: square;
+}
+
+.second {
+  list-style-type: upper-roman;
+  /* list-style: square inside url(); */
+/* shorthand de modificare a listei */
+/* } */
+
+.nav {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  background-color: black;
+  overflow: hidden;
+}
+
+.nav li {
+  float: left;
+  margin-left: 1rem;
+}
+
+.nav li a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  padding: 10px 10px;
+}
+
+.nav li a:hover {
+  background-color: antiquewhite;
+  color: black;
+}
+
+.nav2 {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  background-color: orange;
+  width: 200px;
+}
+
+.nav2 li a {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  padding: 5px 5px;
+}
+
+.nav2 li a:hover {
+  background-color: antiquewhite;
+  color: black;
+}
+
+.div1 {
+  width: 100px;
+  height: 100px;
+  background-color: aqua;
+}
+
+.div2 {
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+  /* visibility: hidden; */
+
+  /* display none -> ascunde lucrurile si face sa dispara influenta elementului in pagina */
+  /* 
+  visibility hidden -> ascunde lucrurile dar ramane stilizarea care o afecteaza elementul */
+}
+
+.div3 {
+  /* float: left; */
+  width: 100px;
+  height: 100px;
+  background-color: magenta;
+}
+
+.cont2 {
+  width: 50%;
+  border: 1px solid black;
+}
+
+.inner {
+  margin-inline: auto;
+  width: 30%;
+  border: 1px solid orange;
+  text-align: center;
+}
+
+.lorem {
+  width: 50%;
+  border: 1px solid black;
+  text-align: center;
+  margin: auto;
+}

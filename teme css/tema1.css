@@ -1,0 +1,17 @@
+.t1 {
+    color: red;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+h2{
+    color: green;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.mypara{
+    color: yellow;
+    font-style: italic;
+    text-decoration: underline;
+}
