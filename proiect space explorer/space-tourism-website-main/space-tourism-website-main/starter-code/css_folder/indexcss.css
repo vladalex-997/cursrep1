@@ -1,5 +1,7 @@
 @import url("./navcss.css");
-
+@import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bellefair&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -7,16 +9,16 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Barlow", sans-serif;
   color: white;
   width: 95vw;
-  min-height: 90vh;
+  height: 95vh;
   background: url("../assets/home/background-home-desktop.jpg") no-repeat
     center/cover;
 }
 
 .container {
-  margin-top: 5vh;
+  margin-top: 10vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -28,7 +30,7 @@ body {
   justify-content: center;
   align-items: center;
   flex: 1;
-  gap: 20vw;
+  gap: 25vw;
 }
 
 .hero-text {
@@ -40,22 +42,28 @@ body {
 .hero-text h1 {
   font-size: clamp(60px, 8vw, 200px);
   letter-spacing: 10px;
+  font-weight: normal;
+  font-family: "Bellefair", serif;
 }
 
 .hero-text h2 {
   font-size: clamp(15px, 3vw, 25px);
   letter-spacing: 10px;
   font-weight: normal;
+  font-family: "Barlow Condensed", sans-serif;
+  color: #d0d6f9;
 }
 
 .hero-text p {
   font-size: clamp(12px, 2vw, 16px);
   max-width: 600px;
   line-height: 1.6;
+  font-family: "Barlow", sans-serif;
+  color: #d0d6f9;
 }
 
 .explore-button {
-  width: 22vw;
+  width: 20vw;
   aspect-ratio: 1;
   display: flex;
   align-items: center;
@@ -66,6 +74,7 @@ body {
   border-radius: 50%;
   cursor: pointer;
   transition: transform 0.4s, box-shadow 0.8s;
+  font-family: condensed;
 }
 
 .explore-button:hover {
