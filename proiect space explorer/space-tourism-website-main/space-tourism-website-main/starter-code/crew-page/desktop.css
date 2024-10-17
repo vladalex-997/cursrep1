@@ -21,14 +21,15 @@ body {
 .container {
   padding: 5vh 5vw 5vh 5vw;
   display: flex;
-  gap: 20vw;
+  gap: 10vw;
 }
 
 .description {
-  width: 55vw;
+  width: 40vw;
+  height: 70vh;
   display: flex;
   flex-direction: column;
-  gap: 15vh;
+  gap: 17vh;
 }
 
 .links {
@@ -53,8 +54,7 @@ body {
   width: 25vw;
   height: auto;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  align-items: flex-end;
 }
 
 .crew-image img {
@@ -104,7 +104,7 @@ body {
 .text h1 {
   font-family: "Bellefair", sans-serif;
   font-weight: normal;
-  font-size: clamp(8px, 2.5vw + 2.5vh, 80px);
+  font-size: clamp(8px, 2vw + 2vh, 80px);
   text-transform: uppercase;
 }
 
