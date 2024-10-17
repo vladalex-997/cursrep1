@@ -11,21 +11,21 @@
 body {
   font-family: "Barlow", sans-serif;
   color: white;
-  width: 95vw;
-  height: 95vh;
+  width: 100vw;
+  height: 100vh;
   background: url("../assets/home/background-home-desktop.jpg") no-repeat
     center/cover;
 }
 
 .container {
-  margin-top: 10vh;
+  padding-top: 20vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
 .hero-content {
-  margin: 5vw;
+  padding: 5vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,18 +36,18 @@ body {
 .hero-text {
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 4vh;
 }
 
 .hero-text h1 {
-  font-size: clamp(60px, 8vw, 200px);
+  font-size: clamp(20px, 6vw + 6vh, 400px);
   letter-spacing: 10px;
   font-weight: normal;
   font-family: "Bellefair", serif;
 }
 
 .hero-text h2 {
-  font-size: clamp(15px, 3vw, 25px);
+  font-size: clamp(5px, 2vw + 2vh, 30px);
   letter-spacing: 10px;
   font-weight: normal;
   font-family: "Barlow Condensed", sans-serif;
@@ -55,7 +55,7 @@ body {
 }
 
 .hero-text p {
-  font-size: clamp(12px, 2vw, 16px);
+  font-size: clamp(4px, 1.5vw + 1.5vh, 20px);
   max-width: 600px;
   line-height: 1.6;
   font-family: "Barlow", sans-serif;

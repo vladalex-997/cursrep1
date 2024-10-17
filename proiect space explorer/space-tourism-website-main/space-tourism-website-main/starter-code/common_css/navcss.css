@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   width: 100vw;
-  margin-top: 5vh;
+  padding-top: 5vh;
   position: relative;
   justify-content: space-between;
   font-family: "Barlow Condensed", sans-serif;
@@ -12,16 +12,16 @@
 .logo-container {
   display: flex;
   align-items: center;
-  margin-left: 3vw;
+  padding-left: 3vw;
 }
 
 .logo {
-  margin-right: 10px;
+  padding-right: 10px;
 }
 
 .white-line {
   position: absolute;
-  top: 50%;
+  top: 65%;
   left: 10%;
   width: 37vw;
   height: 1px;
@@ -59,7 +59,7 @@ nav {
 }
 
 .nav-link-item strong {
-  margin-right: 1vw;
+  padding-right: 1vw;
 }
 
 .nav-links a::after {
