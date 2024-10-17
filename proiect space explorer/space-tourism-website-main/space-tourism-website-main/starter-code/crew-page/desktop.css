@@ -19,17 +19,18 @@ body {
 }
 
 .container {
-  padding: 5vh 5vw 5vh 5vw;
+  padding: 0 5vw 0 5vw;
+  height: 50vh;
   display: flex;
   gap: 10vw;
 }
 
 .description {
   width: 40vw;
-  height: 70vh;
+  height: 60vh;
   display: flex;
   flex-direction: column;
-  gap: 17vh;
+  justify-content: space-around;
 }
 
 .links {
@@ -51,15 +52,15 @@ body {
 }
 
 .crew-image {
-  width: 25vw;
-  height: auto;
+  width: 30vw;
+  height: 60vh;
   display: flex;
-  align-items: flex-end;
+  align-items: flex-start;
 }
 
 .crew-image img {
-  width: 100%;
-  height: auto;
+  width: 30vw;
+  height: 50vh;
   mask-image: linear-gradient(
     to bottom,
     rgba(255, 255, 255, 1) 70%,
@@ -68,6 +69,10 @@ body {
   mask-position: bottom;
   mask-size: 100% 100%;
   mask-repeat: no-repeat;
+}
+
+.meet {
+  padding: 5vh 5vw 15vh 5vw;
 }
 
 .meet span {
