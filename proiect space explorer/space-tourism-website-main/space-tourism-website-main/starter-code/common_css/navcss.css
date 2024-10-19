@@ -21,7 +21,7 @@
 
 .white-line {
   position: absolute;
-  top: 65%;
+  top: 70%;
   left: 10%;
   width: 37vw;
   height: 1px;
@@ -67,7 +67,7 @@ nav {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: -30px;
+  bottom: -23px;
   height: 2px;
   background: white;
   transform: scaleX(0);
