@@ -20,7 +20,7 @@ body {
 }
 
 .meet {
-  padding: 10vh 5vw 10vh 15vw;
+  padding: 5vh 5vw 10vh 15vw;
 }
 
 .meet span {
@@ -46,6 +46,7 @@ body {
   align-items: center;
   width: 100vw;
   gap: 10vw;
+  height: 60vh;
   padding: 0 5vw 0 5vw;
 }
 
@@ -78,7 +79,7 @@ body {
 .links a {
   text-decoration: none;
   letter-spacing: 2px;
-  font-size: clamp(4px, 1.5vw + 1.5vh, 36px);
+  font-size: clamp(4px, 1vw + 1vh, 36px);
   color: #d0d6f9;
   font-family: "Barlow Condensed", sans-serif;
 }
@@ -126,7 +127,7 @@ body {
 }
 
 .textsmall {
-  font-size: clamp(4px, 1.5vw + 1.5vh, 24px);
+  font-size: clamp(2px, 1vw + 1vh, 24px);
   color: #d0d6f9;
   font-family: "Barlow", sans-serif;
   font-weight: normal;
@@ -150,7 +151,7 @@ body {
 
 .distance span,
 .time span {
-  font-size: clamp(4px, 1.5vw + 1.5vh, 20px);
+  font-size: clamp(2px, 0.8vw + 0.8vh, 20px);
   color: #d0d6f9;
   font-family: "Barlow Condensed", sans-serif;
   font-weight: bold;
@@ -159,7 +160,7 @@ body {
 
 .distance h2,
 .time h2 {
-  font-size: clamp(6px, 2vw + 2vh, 40px);
+  font-size: clamp(6px, 1vw + 1vh, 40px);
   font-family: "Bellefair", sans-serif;
   font-weight: normal;
   color: white;

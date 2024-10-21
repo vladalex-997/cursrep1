@@ -15,10 +15,6 @@
   padding-left: 3vw;
 }
 
-.logo {
-  padding-right: 10px;
-}
-
 .white-line {
   position: absolute;
   top: 70%;
@@ -67,7 +63,7 @@ nav {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: -1.5vh;
+  bottom: -20px;
   height: 2px;
   background: white;
   transform: scaleX(0);

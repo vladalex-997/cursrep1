@@ -56,11 +56,12 @@ body {
   height: 60vh;
   display: flex;
   align-items: flex-start;
+  justify-content: center;
 }
 
 .crew-image img {
-  width: 30vw;
-  height: 50vh;
+  width: 25vw;
+  max-height: 50vh;
   mask-image: linear-gradient(
     to bottom,
     rgba(255, 255, 255, 1) 70%,
