@@ -1,6 +1,7 @@
 @import url("../common_css/navcss.css");
 @import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bellefair&display=swap");
 
 * {
   margin: 0;
@@ -9,6 +10,133 @@
 }
 
 body {
-  background-color: black;
+  background-image: url("../assets/destination/background-destination-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Barlow", sans-serif;
+  color: white;
+  width: 100vw;
+  height: 100vh;
+}
+
+.meet {
+  padding: 10vh 5vw 10vh 15vw;
+}
+
+.meet span {
+  display: inline-block;
+  color: grey;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: bold;
+  font-size: clamp(4px, 1.5vw + 1.5vh, 36px);
+  padding-right: 1vw;
+  letter-spacing: 4px;
+}
+
+.meet h3 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: normal;
+  font-size: clamp(4px, 1.5vw + 1.5vh, 36px);
+  letter-spacing: 4px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  gap: 10vw;
+  padding: 0 5vw 0 5vw;
+}
+
+.destination-image {
+  width: 45vw;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.destination-image img {
+  width: 70%;
+  height: auto;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 25vw;
+  height: 60vh;
+}
+
+.links {
+  display: flex;
+  gap: 3vw;
+}
+
+.links a {
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-size: clamp(4px, 1.5vw + 1.5vh, 36px);
+  color: #d0d6f9;
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+.links .selected {
+  padding-bottom: 1vh;
+  border-bottom: white 4px solid;
+}
+
+.links .selected a {
+  color: white;
+}
+
+.textbig h1 {
+  font-size: clamp(6px, 4vw + 4vh, 150px);
+  font-family: "Bellefair", sans-serif;
+  color: white;
+  display: flex;
+  align-items: center;
+  font-weight: lighter;
+}
+
+.textsmall {
+  font-size: clamp(4px, 1.5vw + 1.5vh, 24px);
+  color: #d0d6f9;
+  font-family: "Barlow", sans-serif;
+  font-weight: normal;
+}
+
+.bodyline {
+  border: grey 1px solid;
+}
+
+.travelcontainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.distance,
+.time {
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+}
+
+.distance span,
+.time span {
+  font-size: clamp(4px, 1.5vw + 1.5vh, 20px);
+  color: #d0d6f9;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: bold;
+  letter-spacing: 4px;
+}
+
+.distance h2,
+.time h2 {
+  font-size: clamp(6px, 2vw + 2vh, 40px);
+  font-family: "Bellefair", sans-serif;
+  font-weight: normal;
   color: white;
 }
