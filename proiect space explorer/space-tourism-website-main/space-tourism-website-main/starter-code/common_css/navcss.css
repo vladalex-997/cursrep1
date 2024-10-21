@@ -67,7 +67,7 @@ nav {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: -23px;
+  bottom: -1.5vh;
   height: 2px;
   background: white;
   transform: scaleX(0);

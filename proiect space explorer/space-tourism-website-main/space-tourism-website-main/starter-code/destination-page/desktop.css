@@ -92,6 +92,30 @@ body {
   color: white;
 }
 
+.links .dot a {
+  position: relative;
+}
+
+.links .dot a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1.35vh;
+  height: 4px;
+  background: white;
+  transform: scaleX(0);
+  transition: transform 0.5s ease;
+}
+
+.links .dot a:hover {
+  color: #f0f0f0;
+}
+
+.links .dot a:hover::after {
+  transform: scaleX(1);
+}
+
 .textbig h1 {
   font-size: clamp(6px, 4vw + 4vh, 150px);
   font-family: "Bellefair", sans-serif;
@@ -139,4 +163,5 @@ body {
   font-family: "Bellefair", sans-serif;
   font-weight: normal;
   color: white;
+  text-transform: uppercase;
 }
