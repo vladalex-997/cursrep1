@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.main-content {
+  width: 200px;
+  height: 200px;
+  background-color: aqua;
+  // poate fi pus to left, bottom,... sau grade
+  animation-name: bara;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bara {
+  //   from {
+  //     transform: translateX(0);
+  //   }
+  //   to {
+  //     transform: translateX(300px);
+  //   }
+
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(400px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+
+  //   procentele sunt timpul animatiei
+}

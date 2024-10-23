@@ -1,0 +1,73 @@
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* border box -> obliga childs sa stea inauntru parintilor */
+/* stergerea default a spatiilor din pagina */
+/* https://caniuse.com/ -> pentru a vedea de cand sunt suportate pe browser lucruri  */
+
+/* #blaid{
+    color: blueviolet;
+}
+
+
+.bla{
+    color: red;
+}
+
+.bla span{
+    color: blue;
+} */
+
+/* specificitate ordine: id -> class -> elementele de html */
+
+/* !important inauntru -> da overwrite la orice specificitate */
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.formClass{
+    /* margin-top: 10%; */
+    /* procentele sunt partea din body, body ocupa 100% */
+    margin-top: 1rem;
+
+    /* 1rem = dimensiunea in pixeli a fontului, default e 16px */
+    /* 1em = dimensiunea in pixeli a fontului de pe parinte nu de pe html general ca si rem */
+    width: 100vw;
+    height: 50vh;
+    /* min-height: 30vh; */
+    /* numarvw -> cat la suta ocupa din ce vad in pagina */
+    /* la fel este si numarvh -> este pentru height */
+}
+
+input{
+    width: 30%;
+}
+
+.firstName{
+    color: pink;
+}
+.lastName{
+    color:blue
+}
+
+.inputFieldsWidth{
+    width: 50%;
+}
+
+
+/* input sunt diferite deoarece parintele primului input este deja redus */
+
+
+button{
+    cursor: pointer;
+
+    /* ca sa punem manuta pe button */
+}
+
+/* tema trimise pe discord la trainer */

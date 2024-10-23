@@ -1,0 +1,54 @@
+.main_content {
+  width: 100vw;
+  height: 100vh;
+  background-color: aquamarine;
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+  align-content: flex-start;
+}
+
+.left_content {
+  width: 50%;
+  height: 20%;
+  background-color: blanchedalmond;
+  /* flex-basis: 100px; */
+  flex-grow: 1;
+  order: 5;
+}
+
+.right_content {
+  width: 50%;
+  height: 20%;
+  background-color: yellow;
+  /* flex-basis: 50px; */
+  flex-grow: 2;
+}
+
+.right_content2 {
+  width: 50%;
+  height: 20%;
+  background-color: red;
+  /* flex-basis: 70px; */
+  flex-grow: 3;
+}
+
+.right_content3 {
+  width: 50%;
+  height: 20%;
+  background-color: blue;
+  /* flex-basis: 80px; */
+  flex-grow: 3;
+}
+
+.right_content4 {
+  width: 50%;
+  height: 20%;
+  background-color: violet;
+  /* flex-basis: 200px; */
+  flex-grow: 3;
+}
+
+/* flex-basis seteaza marimea initiala a flexboxului
+flex-grow ne lasa sa specificam care sa fie mai mare sau mai mic */
+/* order schimba ordinea in flex */
