@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  display: flex;
+}
+.main div {
+  width: 50%;
+}
+
+.task {
+  background-color: rgba(123, 133, 133, 0.26);
+  width: 100% !important;
+  display: flex;
+}
+.task button {
+  align-self: flex-end;
+}
+.task button:first-of-type {
+  margin-left: auto;
+}
+
+.modal {
+  display: none;
+  position: relative;
+  left: 50%;
+  top: 50%;
+}/*# sourceMappingURL=style.css.map */
