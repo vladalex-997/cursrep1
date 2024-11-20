@@ -13,6 +13,7 @@ import { readFromLS, removeFromLS, writeToLS } from "./util.js";
 // paragraph.innerText = readFromLS("gigi");
 
 // console.log(removeFromLS("gigi"));
+import { readFromLS, writeToLS } from "./util.js";
 
 const registerBtn = document.querySelector("#registerBtn");
 const username = document.querySelector("#username");
@@ -31,9 +32,8 @@ if (loggedUsers) {
   window.location.assign("./home.html");
 }
 
-console.log(loggedUsers);
 users.forEach((user) => {
-  let el = document.createElement("p");
+  const el = document.createElement("p");
   el.innerText = user.userNameInput;
   usersToShow.appendChild(el);
 });
@@ -51,40 +51,93 @@ users.forEach((user) => {
 //  const lowerCaseRegex = /[a-z]/;
 //  const numberRegex = /[0-9]/;
 //  const specialCharRegex = /[!@#]/;
-registerBtn.addEventListener("click", (event) => {
-  event.preventDefault();
-  const userInfo = {
-    userNameInput: username.value,
-    emailInput: email.value,
-    firstNameInput: firstname.value,
-    lastNameInput: lastname.value,
-    passwordInput: btoa(password.value),
-    ageInput: age.value,
-  };
-  console.log(">>userInfo: ", userInfo);
-  console.log(atob(userInfo.passwordInput) === "gigi");
-  if (
-    userInfo.userNameInput.length === 0 ||
-    userInfo.emailInput.length === 0 ||
-    userInfo.firstNameInput.length === 0 ||
-    userInfo.lastNameInput.length === 0 ||
-    userInfo.passwordInput.length === 0 ||
-    userInfo.ageInput.length === 0
-  ) {
-    error.classList.add("red");
-    error.innerHTML = `<sup>*</sup> Complete each field of the form.`;
-    return;
-  }
+const isValidEmail = (email) => {
   const re =
     /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
-  if (!re.test(userInfo.emailInput)) {
+  return re.test(email);
+};
+
+const isValidPassword = (password) => {
+  const upperCaseRegex = /[A-Z]/;
+  const lowerCaseRegex = /[a-z]/;
+  const numberRegex = /[0-9]/;
+  const specialCharRegex = /[!@#$%^&*]/;
+  return (
+    password.length >= 6 &&
+    upperCaseRegex.test(password) &&
+    lowerCaseRegex.test(password) &&
+    numberRegex.test(password) &&
+    specialCharRegex.test(password)
+  );
+};
+
+const isUnique = (field, value) => {
+  return !users.some((user) => user[field] === value);
+};
+
+registerBtn.addEventListener("click", (event) => {
+  event.preventDefault();
+
+  const userInfo = {
+    userNameInput: username.value.trim(),
+    emailInput: email.value.trim(),
+    firstNameInput: firstname.value.trim(),
+    lastNameInput: lastname.value.trim(),
+    passwordInput: btoa(password.value.trim()),
+    ageInput: age.value.trim(),
+  };
+
+  if (
+    userInfo.userNameInput.length < 4 ||
+    userInfo.firstNameInput.length < 2 ||
+    userInfo.lastNameInput.length < 2
+  ) {
     error.classList.add("red");
-    error.innerHTML = `<sup>*</sup> Invalid Email`;
+    error.innerHTML = `<sup>*</sup> Username must have at least 4 characters, and First Name and Last Name must have at least 2 characters.`;
+    return;
   }
+
+  if (!isValidEmail(userInfo.emailInput)) {
+    error.classList.add("red");
+    error.innerHTML = `<sup>*</sup> Invalid email format.`;
+    return;
+  }
+
+  if (!isValidPassword(password.value.trim())) {
+    error.classList.add("red");
+    error.innerHTML = `<sup>*</sup> Password must be at least 6 characters, with one uppercase letter, one lowercase letter, one number, and one special character.`;
+    return;
+  }
+
+  if (
+    isNaN(userInfo.ageInput) ||
+    userInfo.ageInput < 1 ||
+    userInfo.ageInput > 99
+  ) {
+    error.classList.add("red");
+    error.innerHTML = `<sup>*</sup> Age must be a valid number between 1 and 99.`;
+    return;
+  }
+
+  if (!isUnique("userNameInput", userInfo.userNameInput)) {
+    error.classList.add("red");
+    error.innerHTML = `<sup>*</sup> Username is already taken.`;
+    return;
+  }
+
+  if (!isUnique("emailInput", userInfo.emailInput)) {
+    error.classList.add("red");
+    error.innerHTML = `<sup>*</sup> Email is already registered.`;
+    return;
+  }
+
   users.push(userInfo);
   writeToLS("users", users);
   writeToLS("loggedUser", userInfo);
-  let el = document.createElement("p");
+
+  const el = document.createElement("p");
   el.innerText = userInfo.userNameInput;
   usersToShow.appendChild(el);
+
+  window.location.assign("./home.html");
 });
