@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar cu Notițe</title>
+    <link rel="stylesheet" href="./style.css">
+    <script type="module" src="./script.js" defer></script>
+</head>
+<body>
+
+    <div class="calendar">
+        <div class="calendar-header">
+            <button id="prevMonth">◀</button>
+            <span id="monthYear"></span>
+            <button id="nextMonth">▶</button>
+        </div>
+        <div class="calendar-days-of-week">
+            <span>Lun</span>
+            <span>Mar</span>
+            <span>Mi</span>
+            <span>Joi</span>
+            <span>Vin</span>
+            <span>Sam</span>
+            <span>Dum</span>
+        </div>
+        <div id="calendar-days" class="calendar-days"></div>
+    </div>
+
+    <!-- Formular pentru notițe -->
+    <div id="note-modal" class="modal">
+        <div class="modal-content">
+            <h2>Adăugați notițe</h2>
+            <input type="text" id="note-input" placeholder="Introduceți notița...">
+            <button id="save-note">Salvează</button>
+            <button id="close-modal">Închide</button>
+        </div>
+    </div>
+
+ 
+</body>
+</html>
